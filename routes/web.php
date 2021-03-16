@@ -26,6 +26,7 @@ Route::group(['prefix' => 'admin/profile'] , function() {
 });
 
 // Route::get('URL','こんとろーらー@アクション' )
+// memomemomemo
 
 Route::group(['prefix' => 'admin'] , function() {
     Route::get('news/create','Admin\NewsController@add' );
