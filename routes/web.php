@@ -28,6 +28,16 @@ Route::group(['prefix' => 'admin/profile'] , function() {
 // Route::get('URL','こんとろーらー@アクション' )
 // memomemomemo
 
-Route::group(['prefix' => 'admin'] , function() {
-    Route::get('news/create','Admin\NewsController@add' );
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('news/create', 'Admin\NewsController@add')->middleware('auth');
+});
+
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
+     Route::get('news/create', 'Admin\NewsController@add');
+     Route::post('news/create', 'Admin\NewsController@create'); # 追記
 });
