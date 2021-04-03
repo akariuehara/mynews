@@ -42,7 +42,7 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -54,20 +54,15 @@
                                     </form>
                                 </div>
                             </li>
-                            @endguest
-                            {{-- 以上までを追記 --}}
-             
-                           </ul>
-                        
-                        
-                                  <ul class="navbar-nav ml-auto">
-                                </ul>
-                             </div>
-                           </div>
-                        </nav>
-                         <main class="py-4">
-                    @yield('content')    
-                  </main>      
-              </div>          
+                        @endguest
+                        {{-- 以上までを追記 --}}
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <main class="py-4">
+                @yield('content')    
+            </main>      
+        </div>          
     </body>
 </html>
