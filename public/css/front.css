@@ -1,0 +1,53 @@
+body {
+  color: #000;
+}
+
+.header .logo {
+  width: 120px;
+  height: 82px;
+}
+
+.healine .caption {
+  position: relative;
+  width: 350px;
+}
+
+.healine .caption .image img {
+  width: 100%;
+}
+
+.healine .caption .title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.healine .caption .title h1 {
+  color: #fff;
+  front-size: 1.2 em;
+}
+
+.healine .caption .body {
+  front-size: 0.8em;
+}
+
+.posts .post .date {
+  front-size: 0.6em;
+  color: #999999;
+}
+
+.posts .post .title {
+  front-size: 1, 2em;
+  front-weight: bold;
+}
+
+.posts .post .body {
+  front-size: 0.8em;
+}
+
+.posts .post .image img {
+  width: 250px;
+}
+
